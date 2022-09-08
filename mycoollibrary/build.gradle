@@ -1,15 +1,18 @@
-plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
-}
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+group='com.github.rikithakkar1012'
+
 
 android {
     namespace 'com.android.mycoollibrary'
     compileSdk 32
 
     defaultConfig {
-        minSdk 30
+        minSdk 23
         targetSdk 32
+        versionCode 1
+        versionName "0.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
